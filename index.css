@@ -1,0 +1,395 @@
+body {
+    background-color: #fff;
+    color: black;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+a:focus,
+a:hover {
+    color: black;
+}
+
+
+/* START: NAV BAR */
+.nav {
+    display: flex;
+    background-color: rgba(226, 170, 170, 0.15);
+}
+
+/* 
+    1- Agrega un selector [img] que contenga
+        height: 86px
+        margin (para separarlo de otros elementos)
+    
+    .nav _______ img {}
+*/
+
+/*  
+    2- Agrega un selector que 
+*/
+
+.nav .nav-menu {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /*Sets listed items to the right*/
+    justify-content: flex-end;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.nav .nav-menu .nav-menu__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .nav-menu .nav-menu__list li {
+    /*Removes listed bullet types*/
+    list-style-type: none;
+    margin-right: 82px;
+    cursor: pointer;
+}
+
+.nav .nav-menu .nav-menu__list li:hover {
+    text-decoration: underline;
+}
+
+.nav .nav-menu .nav-menu__list li button {
+    background: none;
+    outline: inherit;
+    color: inherit;
+    border: 2px solid #000;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 400;
+    padding: 0px 10px;
+    border-radius: 5px;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.nav .nav-menu .nav-menu__list li button:hover {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nav .nav-menu .nav-menu__list li button:active {
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.nav .nav-menu .nav-menu__list li button a {
+    text-decoration: none;
+    line-height: 38px;
+}
+
+/* END: NAV BAR */
+
+.hero {
+    display: flex;
+    /*centers text inside div*/
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(/images/bighero.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero .hero-text .hero-text__title {
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    text-transform: uppercase;
+    font-size: 96px;
+}
+
+.hero .hero-text .hero-text__subtitle {
+    color: white;
+    font-size: 64px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 10%;
+}
+
+.column .column-card {
+    flex: 1;
+    margin: 100px 0;
+}
+
+.column .column-card .column-card__icon {
+    margin: 25px 0;
+}
+
+.column .column-card .column-card__icon img {
+    height: 50px;
+}
+
+.column .column-card .column-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.column .column-card .column-card__subtitle {
+    font-size: 14px;
+}
+
+.column .column-cta .column-cta__title {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.column .column-cta .column-cta__button button {
+    background: none;
+    outline: inherit;
+    color: inherit;
+    border: 2px solid #000;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    border-radius: 5px;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.column .column-cta .column-cta__button button:hover {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.column .column-cta .column-cta__button button:active {
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.column .column-form {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    text-align: left;
+    margin: 100px 0;
+}
+
+.column .column-form .column-form__text {
+    flex: 1;
+}
+
+.column .column-form .column-form__text .column-form__text--title {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0 15px 0px 0;
+}
+
+.column .column-form .column-form__text .column-form__text--subtitle {
+    font-size: 18px;
+}
+
+.column .column-form .column-form__inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.column .column-form .column-form__inputs input {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-indent: 12px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.column .column-form .column-form__inputs input::-webkit-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs input:-ms-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs input::-ms-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs input::placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs textarea {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    text-indent: 12px;
+    padding: 10px;
+    border: 2px solid black;
+    outline: none;
+    margin: 10px 0;
+    resize: none;
+}
+
+.column .column-form .column-form__inputs textarea::-webkit-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs textarea:-ms-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs textarea::-ms-input-placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs textarea::placeholder {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    text-indent: 12px;
+}
+
+.column .column-form .column-form__inputs button {
+    background: none;
+    outline: inherit;
+    color: inherit;
+    border: 2px solid #000;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    width: 50%;
+    border-radius: 5px;
+    -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: -webkit-box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.column .column-form .column-form__inputs button:hover {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.column .column-form .column-form__inputs button:active {
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(226, 170, 170, 0.15);
+}
+
+.footer .footer-logo {
+    align-self: flex-end;
+}
+
+.footer .footer-logo .footer-logo__svg {
+    cursor: pointer;
+}
+
+.footer .footer-logo .footer-logo__svg img {
+    height: 86px;
+    margin: 5px 0 0 30px;
+}
+
+.footer .footer-menu {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /*Sets listed items to the right*/
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.footer .footer-menu li {
+    /*Removes listed bullet types*/
+    list-style-type: none;
+    margin-right: 82px;
+    cursor: pointer;
+}
+
+.footer .footer-menu li:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-menu .title {
+    margin-bottom: 5px;
+    font-weight: 700;
+    cursor: none;
+}
+
+.footer .footer-menu .title:hover {
+    text-decoration: none;
+}
+
+.footer .footer-watermark {
+    align-self: flex-end;
+    font-size: 12px;
+    margin-bottom: 16px;
+    margin-right: 25px;
+}

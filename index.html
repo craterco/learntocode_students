@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <!-- UTF-8 (U from Universal Character Set + Transformation Format—8-bit) -->
+    <meta charset="UTF-8">
+
+    <!-- <meta> (viewport element) 
+        Le dice al browser como interactuar con tu pagina, si va a escalarla o no. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titulo que aparece en el tab -->
+    <title>Landing Page</title>
+
+    <!-- Link de estilos de tipografia -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i" rel="stylesheet">
+
+    <!-- Link que obtiene el icono de "favoritos" -->
+    <link rel='icon' type='image/ico' href='/images/coffee.ico'>
+
+    <!-- Hojas de estilo -->
+    <link href="/index.css" rel="stylesheet" />
+
+    <!-- Scripts de JavaScript (El cual no tiene nada en este momento)-->
+    <script src="/javascripts/site.js"></script>
+</head>
+
+<body>
+
+    <!-- [1] -->
+    <!-- START: NAV BAR -->
+    <div class="nav">
+        NAV
+        <div class="nav-logo">
+            <div class="nav-logo__svg">
+                <!-- Agrega un [img] tag para contener el logo -->
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <!-- Agrega un [ul] con una [class] de estilo -->
+            <!-- *Acuerdate que el [ul] contiene [li] adentro -->
+        </div>
+
+    </div>
+    <!-- END: NAV BAR -->
+
+    <!-- [2] -->
+    <!-- START: HERO SHOT -->
+    <div class="hero">
+
+        <div class="hero-text">
+            hero
+            <!-- 1.- Agrega 2 [p] tags que contendrán el titulo y subtitulo -->
+            <!-- 2.- Diferencia los tags por medio de dos clases similares pero con diferente terminación
+                    por Ejemplo:
+                        hero-text__title
+                        hero-text__subtitle
+            -->
+        </div>
+
+    </div>
+    <!-- END: HERO SHOT -->
+
+    <!-- [3] -->
+    <!-- START: column cards -->
+    <div class="column">
+
+        <div class="column-card">
+            cards
+            <!-- 1.- Crea 3 [div] los cuales contendrán:
+                    <div> icon (img) </div>
+                    <div> title </div>
+                    <div> subtitle </div>
+            -->
+            <!-- 2.- Diferencia los tags por medio de dos clases similares pero con diferente terminación
+                    por Ejemplo:
+                        column-card__icon
+                        column-card__title
+                        column-card__subtitle
+            -->
+
+            <!-- NOTA: Flexbox puede ir en dos direcciones pero solo una a la vez
+                        Verticalmente: utilizamos la propiedad de css [flex-direction: row]
+                        Horizontal: utilizamos la propiedad de css [flex-direction: column]
+            -->
+
+        </div>
+        <!-- 3.- Agrega otros 2 componentes mas (cards) -->
+
+    </div>
+    <!-- END: column cards -->
+
+    <!-- [4] -->
+    <!-- START: column cards -->
+    <div class="column">
+        cta
+        <div class="column-cta">
+            <!-- 1.- Crea 2 [div] los cuales contendrán:
+                    <div> texto </div>
+                    <div> [button] con texto adentro del tag </div>
+            -->
+        </div>
+
+    </div>
+    <!-- END: column cards -->
+
+    <!-- [5] -->
+    <!-- START: column form -->
+    <div class="column">
+        <div class="column-form">
+            form
+            <!-- 1.- Crea 2 [div] los cuales contendrán:
+                    <div> 
+                        [span]titulo
+                        [p]subtitulo
+                    </div>
+                    <div> 
+                        2.-
+                    </div>
+            -->
+            <!-- 
+                2.- Adentro del segundo [div] agrega 3 inputs diferentes para crear un formulario de contacto
+                    <input placeholder="Name" type="name" />
+                    <textarea placeholder="Your message..."></textarea>
+                    <button>SEND</button>
+             -->
+
+            <div class="column-form__text"></div>
+            <div class="column-form__inputs"></div>
+        </div>
+
+    </div>
+    <!-- END: column form -->
+
+    <!-- [6] -->
+    <!-- START: Footer -->
+    <div class="footer">
+        footer
+        <!-- 1.- Crea 3 [div] los cuales contendrán:
+                <div> 
+                    [img] logo
+                </div>
+                <div> 
+                    [ul] Menu 
+                </div>
+                <span>
+                    watermark
+                </span>
+            -->
+
+        <!-- NOTA: Todo el footer tendra que estar envuelto en un div.class="footer" que tenga propiedades de css flexbox
+            -->
+    </div>
+    <!-- END: Footer -->
+
+</body>
+
+</html>
